@@ -2,7 +2,7 @@
  Theme Name:   Accelerate Theme Child
  Theme URI:    http://example.com/accelerate-theme-child/
  Description:  Accelerate Child Theme - Accelerate
- Author:       Your Name!
+ Author:       Troy Pratt
  Author URI:   http://example.com
  Template:     accelerate-theme
  Version:      1.0.0
@@ -11,6 +11,13 @@
 */
 
 @import url("../accelerate-theme/style.css");
+
+/* Keep Images Contained */
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
 
 .home-page {
     background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
@@ -23,6 +30,13 @@
 .button {
     background: none repeat scroll 0 0 #45ac9d;
 }
+
+#masthead nav ul li {
+    display: inline-block;
+    margin:0 10px;
+}
+
+/* Blog Posts */
 
 .blog-post {
 	width: 50%;
@@ -42,9 +56,80 @@
 }
 
 .blog-post .read-more-link {
-	font-size: 24px;
+	font-size: 16px;
 	font-family: 'Montserrat';
 	font-weight: bold;
 	color: #45ac9d;
 	text-transform: uppercase;
+}
+
+/* Case Studies */
+
+article.case-study {
+  overflow: auto;
+  margin: 40px 0 0;
+}
+
+aside.case-study-sidebar {
+   float: left;
+   width: 314px;
+   margin: 0 40px 0 0;
+}
+
+div.case-study-images {
+   float: left;
+   width: 606px;
+   margin-top: 30px;
+}
+
+div.case-study-images img {
+   margin-bottom: 50px;
+   border: 1px solid #dddddd;
+}
+
+/* Home Page Featured Work  */
+
+h3.featured {
+  text-align: center;
+}
+
+.image-strip {
+  width: 100%;
+}
+
+ul.homepage-featured-work {
+  list-style: none;
+  text-align: center;
+}
+
+.featured-work h4 {
+  text-align: center;
+  margin-bottom: 4em;
+}
+
+.homepage-featured-work li {
+  display: inline-block;
+  width: 31%;
+  margin-right: 3%;
+}
+
+.homepage-featured-work li:last-child {
+  margin-right: 0%;
+}
+
+/* Contact Page Send Button */
+
+#nf-field-12 {
+  float: right;
+  margin: auto;
+  font-size: 18px;
+  background-color: #45ac9d;
+  border: 1px solid #45ac9d;
+  padding: 15px 13% 15px 13%;
+}
+
+/* Contact Page */
+
+#nf-form-1-cont {
+  padding: 17px 17% 17px 17%;
 }
