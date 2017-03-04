@@ -28,7 +28,7 @@ get_header(); ?>
 	<div class="site-content">
 
 			<ul class="homepage-featured-work">
-				<h4>Featured Work</h4>
+				<h4>FEATURED WORK</h4>
 
 				<?php query_posts('posts_per_page=3&post_type=case_studies&order=DESC'); ?>
 						<?php while ( have_posts() ) : the_post();
