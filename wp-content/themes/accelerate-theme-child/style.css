@@ -21,6 +21,9 @@ img {
 
 .home-page {
     background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
+    height: 290px;
+    margin: 0 0 80px;
+    padding: 100px 0;
 }
 
 #masthead {
@@ -140,4 +143,124 @@ ul.homepage-featured-work {
 
 .contact-us #content {
   padding: 17px 17% 17px 17%;
+}
+
+/* About Page */
+
+.about-page {
+  background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
+  height: 290px;
+  margin: 0 0 80px;
+  padding: 100px 0;
+}
+
+.services {
+  overflow: auto;
+}
+
+.about-co {
+  color: #ffffff;
+  line-height: 1.5em;
+  font-size: 1.3em;
+  width: 50%;
+  float: right;
+  margin-right: 325px;
+  margin-bottom: 130px;
+}
+
+.about-services {
+  text-align: center;
+  margin-bottom: 100px;
+  line-height: .5em;
+}
+
+.interested {
+  float: left;
+  }
+
+.contact-button {
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff !important;
+  background-color: #45ac9d;
+  border: 1px solid #45ac9d;
+  padding: 10px 7% 10px 7%;
+}
+
+.work-with-us {
+  border-top: dotted 1px #bfbfbf;
+}
+
+.icon-1 {
+  width: 30%;
+  margin-right: 3%;
+  float: left;
+}
+
+.content-strategy {
+  width: 70%;
+  margin-left: 40px;
+  margin-bottom: 30px;
+  float: right;
+}
+
+.icon-2 {
+  width: 30%;
+  margin-left: 3%;
+  float: right;
+}
+
+.influencer-mapping {
+  width: 70%;
+  margin-right: 40px;
+  margin-bottom: 30px;
+  float: left;
+}
+
+.icon-3 {
+  float: left;
+  clear: both;
+}
+
+.social-media-strategy {
+  width: 70%;
+  margin-left: 40px;
+  margin-bottom: 30px;
+  float: right;
+}
+
+.icon-4 {
+  width: 30%;
+  margin-left: 3%;
+  float: right;
+}
+
+.design-development {
+  width: 70%;
+  margin-right: 40px;
+  margin-bottom: 30px;
+  float: left;
+}
+
+/* Front Page Widgets */
+
+.home .widget {
+    font-size: 16px;
+    font-weight: 200;
+    font-family: 'Montserrat';
+    padding: 0 40px;
+    position: absolute;
+    float: right;
+    margin-left: 500px;
+    margin-top: -300px;
+    margin-right: 120px;
+}
+
+.home .widget-title {
+    color: #bfbfbf;
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 20px 0 5px;
 }

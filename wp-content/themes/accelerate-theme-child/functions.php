@@ -25,7 +25,9 @@
  * @since Accelerate Marketing 1.0
  */
 
-  function create_custom_post_types() {
+// Custom post types function
+function create_custom_post_types() {
+// create a case study custom post type
      register_post_type( 'case_studies',
          array(
              'labels' => array(
@@ -38,9 +40,24 @@
          )
      );
  }
+
+ // create a services custom post type
+ register_post_type( 'services',
+     array(
+         'labels' => array(
+             'name' => __( 'Services' ),
+             'singular_name' => __( 'Services' )
+         ),
+         'public' => true,
+         'has_archive' => false,
+         'rewrite' => array( 'slug' => 'services' ),
+     )
+ );
  add_action( 'init', 'create_custom_post_types' );
 
- add_filter( 'body_class','accelerate_body_classes' );
+
+// create contact us body class
+  add_filter( 'body_class','accelerate_body_classes' );
  function accelerate_body_classes( $classes ) {
 
    if (is_page('contact-us') ) {
@@ -49,3 +66,20 @@
      return $classes;
 
  }
+
+// Create dynamic sidebar
+
+function accelerate_theme_child_widget_init() {
+
+	register_sidebar( array(
+	    'name' =>__( 'Homepage sidebar', 'accelerate-theme-child'),
+	    'id' => 'sidebar-2',
+	    'description' => __( 'Appears on the static front page template', 'accelerate-theme-child' ),
+	    'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+	    'after_widget' => '</aside>',
+	    'before_title' => '<h3 class="widget-title">',
+	    'after_title' => '</h3>',
+	) );
+
+}
+add_action( 'widgets_init', 'accelerate_theme_child_widget_init' );
