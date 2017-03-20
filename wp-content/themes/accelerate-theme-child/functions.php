@@ -83,3 +83,15 @@ function accelerate_theme_child_widget_init() {
 
 }
 add_action( 'widgets_init', 'accelerate_theme_child_widget_init' );
+
+// Hook into Simple Twitter Tweets widget on Front page and dynamically add handle after title-tag
+function add_twitter_handle( $title ) {
+		// Fetch handle that is stored in options table but not output by STT widget
+    	$stt_options = get_option( 'widget_pi_simpletwittertweets' );
+			$twitter_handle = $stt_options[2]['name'];
+			if ( !is_front_page() ) {
+				return $title;
+			}
+    	return $title .= '<div class="twitterhandle">@'. $twitter_handle . '</div>';
+		}
+add_filter('widget_title', 'add_twitter_handle'); 

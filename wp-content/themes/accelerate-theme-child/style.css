@@ -24,7 +24,7 @@ img {
     height: 290px;
     margin: 0 0 80px;
     padding: 100px 0;
-}
+    }
 
 #masthead {
     background: none repeat scroll 0 0 #45ac9d;
@@ -164,7 +164,7 @@ ul.homepage-featured-work {
   font-size: 1.3em;
   width: 50%;
   float: right;
-  margin-right: 325px;
+  margin-right: 285px;
   margin-bottom: 130px;
 }
 
@@ -247,20 +247,47 @@ ul.homepage-featured-work {
 
 .home .widget {
     font-size: 16px;
-    font-weight: 200;
+    font-weight: 100;
     font-family: 'Montserrat';
     padding: 0 40px;
     position: absolute;
     float: right;
     margin-left: 500px;
-    margin-top: -300px;
-    margin-right: 120px;
+    margin-top: -330px;
+    margin-right: 61px;
+}
+
+.home .widget li {
+  display: inline-block;
+  margin-left: -20px;
+  margin-top: -45px;
 }
 
 .home .widget-title {
-    color: #bfbfbf;
-    font-size: 1em;
+    color: #a6a6a6;
+    font-size: 16px;
     font-weight: 600;
     text-transform: uppercase;
-    margin: 20px 0 5px;
+    margin: 20px 0 54px;
 }
+
+.home .twitterhandle {
+  font-size: 20px;
+  color: black;
+  margin: 39px 0;
+}
+
+/* Social Media Icons */
+
+.menu-social-media-nav-container ul {
+  list-style: none;
+}
+.menu-social-media-nav-container ul li {
+  display: inline;
+}
+
+i.icon-2x.icon-twitter {
+  background color: none;
+  color: none;
+}
+ 
