@@ -21,10 +21,7 @@ img {
 
 .home-page {
     background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
-    height: 290px;
-    margin: 0 0 80px;
-    padding: 100px 0;
-    }
+}
 
 #masthead {
     background: none repeat scroll 0 0 #45ac9d;
@@ -32,6 +29,7 @@ img {
 
 .button {
     background: none repeat scroll 0 0 #45ac9d;
+    margin-right: -2%;
 }
 
 #masthead nav ul li {
@@ -154,8 +152,14 @@ ul.homepage-featured-work {
   padding: 100px 0;
 }
 
-.services {
-  overflow: auto;
+.hero-text {
+  text-align: center;
+}
+
+.intro {
+  text-align: center;
+  padding: 0px 23% 30px 23%;
+  margin-top: -20px;
 }
 
 .about-co {
@@ -174,8 +178,14 @@ ul.homepage-featured-work {
   line-height: .5em;
 }
 
-.interested {
-  float: left;
+.about-section {
+  overflow: auto;
+  margin-bottom: 80px;
+  padding: 5px 4% 5px 4%;
+}
+
+.work-with-us {
+  margin-left: 150px;
   }
 
 .contact-button {
@@ -183,67 +193,43 @@ ul.homepage-featured-work {
   font-size: 20px;
   font-weight: bold;
   color: #fff !important;
-  background-color: #45ac9d;
+  background: none repeat scroll 0 0 #45ac9d;
   border: 1px solid #45ac9d;
   padding: 10px 7% 10px 7%;
 }
 
-.work-with-us {
+a.contact-button {
+  margin-right: 150px;
+  margin-top: -50px;
+}
+
+.outro {
   border-top: dotted 1px #bfbfbf;
 }
 
-.icon-1 {
-  width: 30%;
-  margin-right: 3%;
+.service-icon-align-left {
+  width: 25%;
+  margin-right: 4%;
   float: left;
 }
 
-.content-strategy {
-  width: 70%;
-  margin-left: 40px;
-  margin-bottom: 30px;
+.service-icon-align-right {
+  width: 25%;
+  margin-left: 2%;
   float: right;
 }
 
-.icon-2 {
-  width: 30%;
-  margin-left: 3%;
-  float: right;
-}
-
-.influencer-mapping {
+.service-description-align-left {
   width: 70%;
-  margin-right: 40px;
-  margin-bottom: 30px;
   float: left;
 }
 
-.icon-3 {
-  float: left;
-  clear: both;
-}
-
-.social-media-strategy {
+.service-description-align-right {
   width: 70%;
-  margin-left: 40px;
-  margin-bottom: 30px;
   float: right;
 }
 
-.icon-4 {
-  width: 30%;
-  margin-left: 3%;
-  float: right;
-}
-
-.design-development {
-  width: 70%;
-  margin-right: 40px;
-  margin-bottom: 30px;
-  float: left;
-}
-
-/* Front Page Widgets */
+/* Front Page Twitter Widget */
 
 .home .widget {
     font-size: 16px;
@@ -258,9 +244,10 @@ ul.homepage-featured-work {
 }
 
 .home .widget li {
-  display: inline-block;
+  display: block;
   margin-left: -20px;
-  margin-top: -45px;
+  margin-top: -43px;
+  line-height: 28px;
 }
 
 .home .widget-title {
@@ -273,21 +260,76 @@ ul.homepage-featured-work {
 
 .home .twitterhandle {
   font-size: 20px;
-  color: black;
+  color: #3b3b3b;
+  text-transform: capitalize;
+  font-size: 22px;
   margin: 39px 0;
+}
+
+.follow-us-link {
+  font-weight: bold;
+  font-size: 16px;
+  font-family: 'Montserrat';
+  color: #45ac9d;
+  text-transform: uppercase;
 }
 
 /* Social Media Icons */
 
 .menu-social-media-nav-container ul {
   list-style: none;
+  float: right;
 }
 .menu-social-media-nav-container ul li {
   display: inline;
 }
 
 i.icon-2x.icon-twitter {
-  background color: none;
-  color: none;
+  font-size: 23px;
+  margin-right: 5px;
 }
- 
+
+i.icon-2x.icon-facebook {
+  font-size: 23px;
+  margin-right: 5px;
+}
+
+i.icon-2x.icon-linkedin {
+  font-size: 23px;
+  margin-right: 5px;
+}
+
+/* 404 Page */
+
+div.page-wrapper {
+  text-align: center;
+}
+
+.home-button {
+  background: none repeat scroll 0 0 #45ac9d;
+  color: white;
+  padding: 10px 7% 10px 7%;
+}
+
+/* Blog Page Side Widget */
+
+label.screen-reader-text {
+  color: #45ac9d;
+}
+
+.widget_search-form {
+  border-bottom: 1px solid #bfbfbf;
+  padding: 28px 31px;
+  position: relative;
+}
+
+.widget #searchsubmit {
+  background: #45ac9d;
+  color: white;
+  margin-top: 22px;
+}
+
+.mc4wp-form-fields input[type=submit] {
+  background: #45ac9d;
+  color: white;
+}

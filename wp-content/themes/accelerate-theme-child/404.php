@@ -20,9 +20,9 @@ get_header(); ?>
 
                         <div class="page-wrapper">
                                 <div class="page-content">
-                                        <h2><?php _e( 'I do say, this is quite embarrassing!', 'accelerate-theme-child' ); ?></h2>
-                                        <p><?php _e( 'It seems as though what you were looking for could not be found here, perhaps you should try again?', 'accelerate-theme-child' ); ?></p>
-                                        <?php get_search_form(); ?>
+                                        <h2><?php _e( 'I do say, this is rather embarrassing!', 'accelerate-theme-child' ); ?></h2>
+                                        <p><?php _e( 'It seems as though what you were looking for could not be found here.  Perhaps you should <span style="color:#45ac9d";>Accelerate</span> back to our home page and try again?', 'accelerate-theme-child' ); ?></p>
+                                        <a class="home-button" href="<?php echo home_url(); ?>/homepage">Home</a>
                                 </div><!--.page-content -->
                         </div><!-- .page-wrapper -->
 

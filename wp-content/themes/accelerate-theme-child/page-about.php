@@ -11,84 +11,84 @@
 get_header(); ?>
 
 <section class="about-page">
-		<div class='homepage-hero'>
-			  <?php the_content(); ?>
-								<h2><span class="about-co"><span style="color:#45ac9d";>Accelerate</span> is a strategy and marketing agency located in the heart of NYC.
-												Our goal is to build businesses by making our clients visable and making their customers smile.</span></h2>
-											</div>
+			<?php while ( have_posts() ) : the_post(); ?>
+				<div class="hero-text">
+								<h3><?php 'the_content'(); ?></h3>
+				</div>
+			<?php endwhile;  //end of the loop. ?>
+</section>
 
-						<div class="site-content">
 
-				<?php $size = "full"; ?>
-
-				<?php while ( have_posts() ) : the_post();
-
+<section class="site-content">
+			<?php while ( have_posts() ) : the_post(); ?>
+						<?php $size = "full";
+						$service_header = get_field('service_header');
+						$service_intro = get_field('service_intro');
+						$icon_1 = get_field('icon_1');
+						$icon_2 = get_field('icon_2');
+						$icon_3 = get_field('icon_3');
+						$icon_4 = get_field('icon_4');
+						$title_1 = get_field('title_1');
+						$title_2 = get_field('title_2');
+						$title_3 = get_field('title_3');
+						$title_4 = get_field('title_4');
 						$description_1 = get_field('description_1');
 						$description_2 = get_field('description_2');
 						$description_3 = get_field('description_3');
 						$description_4 = get_field('description_4');
-		        $icon_1 = get_field('icon_1');
-		        $icon_2 = get_field('icon_2');
-		        $icon_3 = get_field('icon_3');
-						$icon_4 = get_field('icon_4'); ?>
+						$work_with_us = get_field('work_with_us'); ?>
 
-							<div class="about-services">
-									<h3>Our Services</h3>
-									<br/>
-									<p>We take pride in our clients and the content we create for them.</p>
-									<p>Here is a brief overview of our services.</p>
+							<div class="intro">
+									<h3><?php echo $service_header; ?></h3>
+									<p><?php echo $service_intro; ?></p>
 								</div>
 
-									<div class="services">
-											<div class="icon-1">
-												<?php if($icon_1) { ?>
-														<?php echo wp_get_attachment_image( $icon_1, $size ); ?>
-												<?php } ?>
-											</div>
-
-											<div class="content-strategy">
-					                <h2>Content Strategy</h2>
-					                <?php echo $description_1; ?>
-					            </div>
-
-											<div class="influencer-mapping">
-					                <h2>Influencer Mapping</h2>
-					                <?php echo $description_2; ?>
-					            </div>
-
-											<div class="icon-2">
-												<?php if($icon_2) { ?>
-														<?php echo wp_get_attachment_image( $icon_2, $size ); ?>
-												<?php } ?>
-											</div>
-
-											<div class="icon-3">
-												<?php if($icon_3) { ?>
-														<?php echo wp_get_attachment_image( $icon_3, $size ); ?>
-												<?php } ?>
-											</div>
-
-											<div class="social-media-strategy">
-					                <h2>Social Media Strategy</h2>
-					                <?php echo $description_3; ?>
-					            </div>
-
-											<div class="design-development">
-					                <h2>Design & Development</h2>
-					                <?php echo $description_4; ?>
-					            </div>
-
-											<div class="icon-4">
-												<?php if($icon_4) { ?>
-														<?php echo wp_get_attachment_image( $icon_4, $size ); ?>
-												<?php } ?>
-											</div>
+									<section class="about-section">
+										<figure class="service-icon-align-left">
+											<?php echo wp_get_attachment_image( $icon_1, $size ); ?>
+										</figure>
+										<div class="service-description-align-left">
+												<h2><?php echo $title_1; ?></h2>
+												<p><?php echo $description_1; ?></p>
 										</div>
+									</section>
 
-										<div class="work-with-us">
-								        <h2 class="interested">Interested in working with us?</h2>
-								        <a class="contact-button" href="<?php echo home_url(); ?>contact-us">Contact Us</a>
-								    </div>
+									<section class="about-section">
+										<figure class="service-icon-align-right">
+											<?php echo wp_get_attachment_image( $icon_2, $size ); ?>
+										</figure>
+										<div class="service-description-align-right">
+												<h2><?php echo $title_2; ?></h2>
+												<p><?php echo $description_2; ?></p>
+										</div>
+									</section>
+
+									<section class="about-section">
+										<figure class="service-icon-align-left">
+											<?php echo wp_get_attachment_image( $icon_3, $size ); ?>
+										</figure>
+										<div class="service-description-align-left">
+												<h2><?php echo $title_3; ?></h2>
+					              <p><?php echo $description_3; ?></p>
+					          </div>
+									</section>
+
+									<section class="about-section">
+											<figure class="service-icon-align-right">
+												<?php echo wp_get_attachment_image( $icon_4, $size ); ?>
+											</figure>
+											<div class="service-description-align-right">
+													<h2><?php echo $title_4; ?></h2>
+					              	<p><?php echo $description_4; ?></p>
+					           </div>
+									</section>
+
+										<div class="outro">
+												<div class="work-with-us">
+								        <h2><?php echo $work_with_us; ?></h2>
+										</div>
+									</div>
+												<a class="contact-button" href="<?php echo home_url(); ?>contact-us">Contact Us</a>
 
 								    <?php endwhile; // end of the loop. ?>
 
