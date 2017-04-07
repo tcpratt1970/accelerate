@@ -60,19 +60,16 @@ get_header(); ?>
 				<a class="read-more-link" href="<?php the_permalink(); ?>">Read More <span>&rsaquo;</span></a>
 			<?php endwhile; ?> <!--end of the loop -->
 		<?php wp_reset_query(); ?> <!--resets the altered query back to the original -->
-
-		<div class="twitter-feed">
+	</div>
+	<div class="twitter-feed">
 		<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
 		<div id="secondary" class="widget-area" role="complementary">
 			<?php dynamic_sidebar( 'sidebar-2' ); ?>
-		</div>
-		<a class="follow-us-link" href="<?php the_permalink(); ?>">Follow Us <span>&rsaquo;</span></a>
-	<?php endif; ?>
-
-
-			</div>
+			<a class="follow-us-link" href="<?php the_permalink(); ?>">Follow Us <span>&rsaquo;</span></a>
+	  </div>
+	  	<?php endif; ?>
  		</div>
-	</div>
+ 	</div>
 </section>
 
 <?php get_footer(); ?>

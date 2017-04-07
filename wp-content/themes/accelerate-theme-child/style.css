@@ -230,32 +230,45 @@ a.contact-button {
 }
 
 /* Front Page Twitter Widget */
+.home .site-content {
+  overflow: auto;
+}
 
 .home .widget {
-    font-size: 16px;
-    font-weight: 100;
-    font-family: 'Montserrat';
-    padding: 0 40px;
-    position: absolute;
-    float: right;
-    margin-left: 500px;
-    margin-top: -330px;
-    margin-right: 61px;
+  /*font-size: 16px;
+  font-weight: 100;
+  font-family: 'Montserrat';*/
+  /*padding: 0 40px;
+  /*position: absolute;*/
+  /*float: left;*/
+  /*margin-left: 500px;*/
+  /*margin-top: -330px;
+  margin-right: 61px;*/
 }
 
 .home .widget li {
   display: block;
-  margin-left: -20px;
-  margin-top: -43px;
+  width: 50%;
+  font-size: 18px;
+  font-weight: 300;
+  /*margin-left: -20px;
+  margin-top: -43px;*/
   line-height: 28px;
+  float: right;
+  margin-top: -261px;
+  margin-right: -40px;
 }
 
 .home .widget-title {
     color: #a6a6a6;
     font-size: 16px;
     font-weight: 600;
+    font-family: 'Montserrat';
     text-transform: uppercase;
     margin: 20px 0 54px;
+    float: right;
+    margin-top: -350px;
+    margin-right: 250px;
 }
 
 .home .twitterhandle {
@@ -272,6 +285,9 @@ a.contact-button {
   font-family: 'Montserrat';
   color: #45ac9d;
   text-transform: uppercase;
+  float: right;
+  margin-top: -175px;
+  margin-right: 325px;
 }
 
 /* Social Media Icons */
